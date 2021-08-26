@@ -92,4 +92,48 @@ Select verified and primary.
 
 12. Test it by running server and navigate to /accounts/login
 
-13. Run pip3 freeze > requirements.txt  
+13. Run pip3 freeze > requirements.txt
+
+14. Set up templates directories:<br>
+mkdir templates<br>
+mkdir templates/allauth (allauth templates will live in here.)
+
+15. Make copies of allauth templates in the new templates/allauth folder so that we can customize them later.:<br>
+cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/* ./templates/allauth/
+
+
+### Create a base.html template
+
+The base.html template for. th eproject itself in which every other html pgae will be extended from. <br>
+Create base.html in the project level templates folder.<br><br>
+Organize base template into blocks so it can be easily edited or removed in other templates throughout the project.
+
+### Creating new app (I have used the home app for an example)
+
+1. python3 manage.py startapp home - This creates the app. 
+
+2. Create a templates directory in the home app.<br>
+mkdir -p home/templates/home
+
+3. Create an index.html file in the templates/home directory. 
+
+4. In index.html add the {% extends 'base.html' %} {% load static %} tags at the top to extend the base.html and load the static pages.<br>
+Main content for the page will go inside the {% block content %} tags.
+
+5. In the views.py file:<br>
+def index(request):<br>
+
+    return render(request, 'home/index.html') <br>
+
+6. Create a urls.py file in the home app and copy and paste contents of other urls.py file to use as a shell.<br>
+Add a url path to render the views for index.html. <br>
+Import views at the top of the page 'from . import views'
+
+7. Go to project level urls.py page and add the path for the home app urls:<br>
+path('', inlcude('home.urls')),
+
+8. Add the home app to list of installed apps in settings.py.
+
+9. Add the route templates directory to the dirs setting in settings.py:<br>
+os.path.join(BASE_DIR, 'templates'),<br>
+os.path.join(BASE_DIR, 'templates', 'allauth'),<br>
