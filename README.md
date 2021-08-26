@@ -161,7 +161,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 4. In the root level urls.py file add:<br>
 + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)<br><br>
 
-Make sure the following is included in the imports of the urls.py file.
-from django.conf import settings
-from django.conf.urls.static import static
+Make sure the following is included in the imports of the urls.py file.<br>
+from django.conf import settings<br>
+from django.conf.urls.static import static<br>
 
