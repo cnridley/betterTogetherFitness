@@ -1,4 +1,4 @@
-# Better Together Fitness - developed using Django with Django allauth. 
+p# Better Together Fitness - developed using Django with Django allauth. 
 # Deployed on AWS using s3 and IAM. 
 
 ##  **Setting up Django and Allauth.**
