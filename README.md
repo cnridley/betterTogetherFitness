@@ -137,3 +137,31 @@ path('', inlcude('home.urls')),
 9. Add the route templates directory to the dirs setting in settings.py:<br>
 os.path.join(BASE_DIR, 'templates'),<br>
 os.path.join(BASE_DIR, 'templates', 'allauth'),<br>
+
+## Setting up static files. 
+
+1. Create required folders:<br>
+mkdir static<br>
+mkdir static/css<br>
+mkdir media<br>
+
+2. Create base.css fold in css folder.
+
+3. Add the following in the settings.py:
+
+STATIC_URL = '/static/'
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'static'),
+)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+4. In the root level urls.py file add:<br>
++ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)<br><br>
+
+Make sure the following is included in the imports of the urls.py file.
+from django.conf import settings
+from django.conf.urls.static import static
+

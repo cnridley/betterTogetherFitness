@@ -39,9 +39,9 @@
     {% endblock %}
 
     <!-- Calendly badge widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/cnridley1', text: 'Book Your Free Consultation', color: '#00c5e8', textColor: '#ffffff', branding: true }); }</script>
+<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/cnridley1', text: 'Book Your Free Consultation', color: '#00c5e8', textColor: '#ffffff', branding: true }); }</script> -->
 <!-- Calendly badge widget end -->
 
     <title>Better Together Fitness {% block extra_title %}{% endblock %}</title>
@@ -49,9 +49,56 @@
 
 <body>
     <header>
-        BETTER. TOGTHER FITNESS>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="{% url 'home' %}">
+                <img src="../../../media/bt-logo-white.png" class="logo" alt="Better Together Fitness Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars NavButton"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Workouts
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Join the community</a>
+                            <a class="dropdown-item" href="#">On Demand Videos</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenu" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Meet Your Trainers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                            <a class="dropdown-item" href="">Sam Ridley</a>
+                            <a class="dropdown-item" href="">Heather Gaulton</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuTwo" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu">
+                            <a class="dropdown-item" href="">Guides</a>
+                            <a class="dropdown-item" href="">Merchandise</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">FAQ</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href=""><i class="fas fa-shopping-cart"></i><span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
-
 
     {% block content %}
     {% endblock %}
@@ -64,9 +111,6 @@
             <a href="https://www.linkedin.com/in/chloe-ridley-3412a311a/" target="_blank" class="ChloePara">Designed and Developed by Chloe Ridley</a>
         </div>
     </footer>
-
-    {% block postloadjs %}
-    {% endblock %} 
 </body>
 
 </html>

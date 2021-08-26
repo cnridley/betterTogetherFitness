@@ -1,0 +1,709 @@
+/* -- font-family: 'Montserrat', sans-serif;
+ font-family: 'Shadows Into Light Two', cursive; --*/
+
+ /*-- CSS FOR FOOTER --*/
+ footer { /*-- chnages background color and width of background--*/
+    background-color: #00c5e8;
+    width: 100vw;
+ }
+
+ .footerPara { /*-- updates the 'better together fitness' in footer--*/
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 15px;
+ }
+
+ .ChloePara{ /*-- updates the designed and developed by Chloe--*/
+     margin: auto;
+    text-align: center;
+    font-size: 15px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5px;
+ }
+
+ /*-- for medium and small screens! --*/
+@media only screen and (max-width: 768px) {
+     .footerPara { /*-- updates the 'better together fitness' in footer--*/
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 7px;
+ }
+
+ .ChloePara{ /*-- updates the designed and developed by Chloe--*/
+     margin: auto;
+    text-align: center;
+    font-size: 8px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 5px;
+ }
+}
+/*-- CSS FOR NAV BAR --*/
+body {
+    width:100vw;
+}
+.navbar {
+    background-color: #00c5e8;
+    width: 100vw;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.nav-link {/*-- increases font size of nav items and spaces them --*/
+    font-size: 20px;
+    margin-left: 60px;
+    text-decoration: none;
+    color:white;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover{ /*-- changes hover color --*/
+    color:#001f38;
+}
+
+
+.NavButton {/*-- Changes color of fa-lines and increases size. --*/
+    font-size: 30px;
+    color:white
+}
+
+.dropdown-menu { /*-- removes border and background  for dropdown menu list --*/
+    background: none;
+    border: none;
+}
+
+.dropdown-item { /*-- changes link items for the dropdown list  --*/
+    color: white;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #00c5e8;
+}
+
+/*-- for medium and small screens! --*/
+@media only screen and (max-width: 768px) {
+    .logo {
+    max-width: 120px;
+    max-height: 120px;
+}
+.NavButton {/*-- Changes color of fa-lines and increases size. --*/
+    font-size: 20px;
+    color:white
+}
+.nav-link {/*-- increases font size of nav items and spaces them --*/
+    font-size: 12px;
+    margin-left: 60px;
+    text-decoration: none;
+    color:white;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link:hover{ /*-- changes hover color --*/
+    color:#001f38;
+}
+.dropdown-item { /*-- changes link items for the dropdown list  --*/
+    color: white;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    background-color: #00c5e8;
+}
+}
+
+/*-- PICTURE FOR LARGE SCREENS --*/
+.LargeScreenPicture { /*-- Picture of girls knelt will show on larger screens --*/
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+
+.hero-image{ /*-- positions image to stay in the same place so text can be placed ontop--*/
+    position: relative;
+}
+
+/*-- SLOGAN FOR LARGE SCREENS --*/
+.slogan{ /*-- sets position of slogan to absolute and places it in the top left corner of photo --*/
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    text-align: left;
+    width: 500px;
+}
+
+.TrainWithUs{ /*-- Train with us button --*/
+    background-color: #00c5e8;
+    color: white;
+    
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+    margin-right: 100px;
+    
+}
+/*-- SMALL PICTURE ON LARGE SCREENS  --*/
+.SmallScreenPicture {
+    width: 100vw;
+    height: 100vh;
+    position: relative; /*-- set to relative so text can go on it  --*/
+    display: none; /*-- Hides the images on ipad pro and bigger --*/
+}
+
+/*-- for medium and small screens! --*/
+@media only screen and (max-width: 768px) {
+    .SmallScreenPicture {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: block; /*-- Shows the small screen image on smaller screens --*/
+}
+.LargeScreenPicture {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: none; /*-- hides the kneeling image on smaller screens --*/
+}
+
+.slogan{ /*-- slogan for smaller screens --*/
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    text-align: left;
+    width: 400px;
+}
+
+.TrainWithUs{
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+}
+}
+
+/*-- TOGETHER WE ARE BETTER TOGETHER SECTION --*/
+.sectionRow{ /*-- updates the entire row so that its full length of screen --*/
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.sectionCol{ /*-- updates left colomn--*/
+    border: 15px solid white;
+    background-color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+}
+.together { /*--the better together paragraph --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+}
+
+.bluelogo { /*-- changes size of blue logo--*/
+    max-width: 250px;
+    max-height: 250px;
+}
+.JoinUsToday{ /*-- join us button --*/
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/*-- for medium and small screens! FOR BETTER TOGETHER SECTION--*/
+@media only screen and (max-width: 768px) {
+    .together {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #001f38;
+}
+.sectionCol{
+    border: 15px solid white;
+    background-color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+}
+.JoinUsToday{
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 7px;
+}
+}
+
+/*-- WHAT TO EXPECT SECTION --*/
+.sectionCol2{ /*-- updates right col--*/
+    border: 15px solid white;
+    background-color: whitesmoke;
+    padding: 25px;
+    text-align: center;
+}
+
+ul{ /*-- removes bullet point list --*/
+    list-style: none;
+    padding-left: 0;
+}
+
+.listItem:before { /*-- adds the ticks to the list items --*/
+    content: "\2713";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #001f38;
+}
+.whatToExpect { /*-- edits 'what to expect' --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+}
+.listItem{ /*-- edits text with the li elements --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #001f38;
+}
+
+/*-- for medium and small screens!  FOR THE WHAT TO EXPECT SECTION--*/
+@media only screen and (max-width: 768px) {
+    .whatToExpect {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #001f38;
+}
+.listItem:before {
+    content: "\2713";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+}
+
+.listItem{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+}
+}
+
+/*-- TOGETHER WE ARE BETTER TOGETHER SECTION --*/
+.subCard{
+    border: 15px white solid;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+.JoinOurCom{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #00c5e8;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 100px;
+}
+
+.options {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #001f38;
+    justify-content: center;
+}
+
+.tabletImage {
+    width: 100%;
+    height: 100%;
+}
+/*-- for medium and small screens!  SUBSCRIPTIONS INFO ON HOMEPAGE --*/
+@media only screen and (max-width: 768px) {
+    .subCard{
+    border: 15px white solid;
+    padding: 25px;
+    background-color: whitesmoke;
+}
+.JoinOurCom{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #00c5e8;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.options {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+    justify-content: center;
+}
+}
+/*-- CSS FOR SAMS PAGE --*/
+.samRow{ /*-- centres the image --*/
+    margin: auto;
+}
+
+.samPhoto { /*-- resizes picture of sam --*/
+    width: 100%;
+    height: 80%;
+    padding-right: -20px;
+}
+
+.workoutWith{ /*-- heading --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+}
+
+.AboutPara{ /*-- About sam paragraph --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.EnjoyWithMe{
+    padding-top: 4rem;
+}
+
+.samListItem:before { /*-- adds the ticks to the list items --*/
+    content: "\2713";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    color: #001f38;
+}
+
+.samListItem {  /*-- styles the list item text--*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.EnjoyWithMeTitle { /*-- header for enjoy with me --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-align: center;
+}
+
+.TrainWithSam { /*-- button for train with sam --*/
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 7px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.buttonRow{
+    margin: auto;
+    justify-content: center;
+}
+
+/*-- for medium and small screens!  FOR MEET THE TRAINERS--*/
+@media only screen and (max-width: 768px) {
+    .workoutWith{ /*-- heading --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-align: center;
+}
+
+.AboutPara{ /*-- About sam paragraph --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.EnjoyWithMe{
+    padding-top: 2rem;
+}
+
+.samListItem:before { /*-- adds the ticks to the list items --*/
+    content: "\2713";
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #001f38;
+}
+
+.samListItem {  /*-- styles the list item text--*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.EnjoyWithMeTitle { /*-- header for enjoy with me --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-align: center;
+}
+
+.TrainWithSam { /*-- button for train with sam --*/
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 18px;
+    padding: 7px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+}
+
+/*-- GUDIES PAGE --*/
+.guides { /*-- header --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.aboutGuides { /*-- the about guides paragraph --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.CarouselImage { /*-- images --*/
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.nutritionGuides{ /*-- eddit the nutritions guides col --*/
+    margin-bottom: 15px;
+    padding: 75px;
+}
+
+.title{ /*-- edits title of nutrition guides --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #001f38;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.desc{ /*-- edits description --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+}
+
+.price{ /*-- edits price --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+}
+
+.addToCart{ /*-- edits add to cart button --*/
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+/*-- for medium and small screens!  FOR THE NUTRITION GUIDES SECTION--*/
+@media only screen and (max-width: 768px) {
+    .nutritionGuides{ /*-- eddit the nutritions guides col --*/
+    margin-bottom: 15px;
+    padding: 25px;
+}
+    .CarouselImage { /*-- images --*/
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+    .guides { /*-- header --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+.aboutGuides { /*-- the about guides paragraph --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.title{ /*-- edits title of nutrition guides --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #001f38;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.desc{ /*-- edits description --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+}
+
+.price{ /*-- edits price --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+}
+
+.addToCart{ /*-- edits add to cart button --*/
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 12px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+}
+
+ /*-- FAQ PAGE --*/
+
+ .faq{  /*-- edits header --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-transform: uppercase;
+ }
+
+ .aboutFaq{ /*-- edits about faq  --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;    
+ }
+
+ .question { /*-- edits questions --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+}
+
+ .answer{ /*-- edits answers --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 35px;
+ }
+
+ /*-- for medium and small screens!  FOR THE FAQ PAGE--*/
+@media only screen and (max-width: 768px) {
+     .faq{  /*-- edits header --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #001f38;
+    text-decoration: underline;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+ .aboutFaq{ /*-- edits about faq  --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;    
+ }
+
+ .question { /*-- edits questions --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+}
+
+ .answer{ /*-- edits answers --*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    color: #001f38;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 15px;
+ }
+}
+
+/*-- CART PAGE --*/
+
+.EmptyBag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    color: #001f38;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.continueShopping {
+    background-color: #00c5e8;
+    color: white;
+    border: 2px #001f38 solid; 
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 30px;
+}
