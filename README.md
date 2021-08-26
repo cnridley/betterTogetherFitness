@@ -57,10 +57,10 @@ SITE_ID =1
     'allauth.account',<br>
     'allauth.socialaccount'<br>
 
-6. Navigate to the project level urls.py and add the allauth urls and import include at the top:<br>
+6. Navigate to the project level urls.py and add the allauth urls and import 'include' at the top:<br>
 path('accounts/', include('allauth.urls')),
 
-7. Run migratiosn to update the database:<br>
+7. Run migrations to update the database:<br>
 python3 manage.py migrate
 
 8. Run server and navigate to admin page and log in.<br>
