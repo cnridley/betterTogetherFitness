@@ -13,7 +13,7 @@ This creates the project in the current directory. It creates a Django project f
 
 3. Create a .gitignore file.<br>
 Add:<br>
- *.sqlite2<br>
+ *.sqlite3<br>
 *.pyc<br>
 __pycache__/ <br>
 
@@ -130,7 +130,7 @@ Add a url path to render the views for index.html. <br>
 Import views at the top of the page 'from . import views'
 
 7. Go to project level urls.py page and add the path for the home app urls:<br>
-path('', inlcude('home.urls')),
+path('', include('home.urls')),
 
 8. Add the home app to list of installed apps in settings.py.
 
