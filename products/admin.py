@@ -1,5 +1,5 @@
 from django.contrib import admin
-from.models import Gallery, nutritionGuides
+from.models import Gallery, nutritionGuides, merchandise
 
 # Register your models here.
 
@@ -19,5 +19,15 @@ class nutritionAdmin(admin.ModelAdmin):
     )
 
 
+class merchAdmin(admin.ModelAdmin):
+    list_display = (
+        'name',
+        'sku',
+        'description',
+        'price',
+    )
+
+
 admin.site.register(Gallery, GalleryAdmin)
 admin.site.register(nutritionGuides, nutritionAdmin)
+admin.site.register(merchandise, merchAdmin)

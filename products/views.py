@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from products.models import Gallery
 from products.models import nutritionGuides
+from products.models import merchandise
 
 # Create your views here.
 
@@ -22,4 +23,10 @@ def guides(request):
 
 def merch(request):
 
-    return render(request, 'products/merchandise.html')
+    merch = merchandise.objects.all()
+
+    context = {
+        'merch': merch,
+    }
+
+    return render(request, 'products/merchandise.html', context)
