@@ -9,8 +9,8 @@ from products.models import nutritionGuides
 
 def guides(request):
 
-    gallery = Gallery.objects.all()
-    guides = nutritionGuides.objects.all()
+    gallery = Gallery.objects.all() #gets the images from th egallery model 
+    guides = nutritionGuides.objects.all() #gets all the info from the nutrition guides.
 
     context = {
         'gallery': gallery,
