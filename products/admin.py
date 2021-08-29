@@ -4,7 +4,7 @@ from.models import Gallery, nutritionGuides
 # Register your models here.
 
 
-class GalleryAdmin(admin.ModelAdmin):
+class GalleryAdmin(admin.ModelAdmin): #which categories in the models will be shown on the admind page. 
     list_display = (
         'name',
         'image',
