@@ -53,13 +53,6 @@
         <p class="title">{{ NutGu.title }}</p>
         <p class="desc">{{ NutGu.description }}</p>
         <p class="price">£{{ NutGu.price }}</p> 
-        <!-- Form to add the wanted item to the shopping cart -->
-        <form method="POST" action="">
-            {% csrf_token %} 
-        <input type="submit" value="Add To Cart" class="addToCart">
-        <!-- hidden redirect url to redirect user back to same page once product has been added to bag-->
-        <input type="hidden" name="redirect_url" value="">
-        </form>
         {% endfor %}
             
     </div>
