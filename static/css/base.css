@@ -707,3 +707,22 @@ ul{ /*-- removes bullet point list --*/
     margin: auto;
     margin-bottom: 30px;
 }
+
+
+/*-- Merch deatils page --*/
+
+.merchDetailImage {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.merchDetailsInfo{
+    font-family: 'Montserrat', sans-serif;
+    color: #001f38;
+}
+
+.merchDetailsInfo h1 {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+

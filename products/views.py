@@ -1,4 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.contrib import messages
+from django.db.models import Q
 from products.models import Gallery
 from products.models import nutritionGuides
 from products.models import merchandise
@@ -24,9 +26,21 @@ def guides(request):
 def merch(request):
 
     merch = merchandise.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('products'))
+            
+            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            merch = merch.filter(queries)
 
     context = {
         'merch': merch,
+        'search_term': query,
     }
 
     return render(request, 'products/merchandise.html', context)

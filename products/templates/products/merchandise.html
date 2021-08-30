@@ -9,6 +9,19 @@
     <p class="aboutGuides">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, assumenda! Tempora eum
         fugiat saepe debitis temporibus nisi officia voluptate. Provident, culpa ipsam facere nemo repellat nisi id
         magnam recusandae alias?</p>
+        <!-- search for merchandise page.-->
+        <form method="GET" action="{% url 'merch' %}" class="d-block m-auto">
+          <div class="input-group w-100">
+              <input class="form-control border border-black rounded-0" type="text" name="q" placeholder="Search our merch...">
+              <div class="input-group-append">
+                  <button class="form-control btn btn-black border border-black rounded-0" type="submit">
+                      <span class="icon">
+                          <i class="fas fa-search"></i>
+                      </span>
+                  </button>
+              </div>
+          </div>
+      </form>
 </div>
 
 
@@ -21,7 +34,7 @@
     </a>
         <div class="card-body">
           <h5 class="card-title">{{ M.name }}</h5>
-          <p class="card-text">{{ M.description }}</p>
+          <p class="card-text">${{ M.price }}</p>
         </div>
       </div>
     </div>

@@ -5,21 +5,26 @@
 {% block content %}
 
 
-<div class="row container-fluid sectionRow">
-    
-    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3 mb-5 mt-3">
-    <div class="card h-100 border-0 ">
-        <a href="#" class="h-100"> 
-        <img src="{{ merch1.image.url }}" class="card-img-top" alt="{{ merch1.image_url }}">
-    </a>
-        <div class="card-body">
-          <h5 class="card-title">{{ merch1.name }}</h5>
-          <p class="card-text">{{ merch1.description }}</p>
-        </div>
-      </div>
-    </div>
-
+<div class="row container-fluid sectionRow mt-5">
+  <div class="col-lg-4 h-50 w-50">
+    <img src="{{ merch1.image.url }}" class="h-50 merchDetailImage" alt="{{ merch1.image_url }}">
+  </div>
+  <div class="col-lg-8 merchDetailsInfo">
+    <h1>{{ merch1.name }}</h1> 
+    <br>
+    <p>{{ merch1.description }}</p>
+    <p>${{ merch1.price }}</p>
+    <p>Rating: {{ merch1.rating }}/5</p>
+    <!-- Form to add the wanted item to the shopping cart -->
+    <form method="POST" action="">
+      {% csrf_token %} 
+  <input type="submit" value="Add To Cart" class="addToCart">
+  <!-- hidden redirect url to redirect user back to same page once product has been added to bag-->
+  <input type="hidden" name="redirect_url" value="">
+  </form>
+  </div>
 </div>
+
 
 
    
