@@ -98,7 +98,7 @@
                                 {% if grand_total %}
                                     ${{ grand_total|floatformat:2 }}
                                 {% else %}
-                                    $0
+                                    <p></p>
                                 {% endif %}
                             </p>
                         </a>
@@ -119,6 +119,9 @@
             <a href="https://www.linkedin.com/in/chloe-ridley-3412a311a/" target="_blank" class="ChloePara">Designed and Developed by Chloe Ridley</a>
         </div>
     </footer>
+
+    {% block postloadjs %}
+    {% endblock %}
 </body>
 
 </html>
