@@ -91,6 +91,11 @@ body {
     background-color: #00c5e8;
 }
 
+.grand-total-price {
+    font-size: 15px;
+    text-align: center;
+}
+
 /*-- for medium and small screens! --*/
 @media only screen and (max-width: 768px) {
     .logo {

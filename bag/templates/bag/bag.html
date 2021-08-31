@@ -4,9 +4,57 @@
 
 {% block content %}
 
-{% if bag_items %}
+<div class="row container-fluid sectionRow">
+    <p class="guides">Cart</p>
+  </div>
+  
+  <div class="row container-fluid sectionRow emptyCart">
+    {% if bag_items %}
+    <table>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Product</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in bag_items %}
+          <tr>
+            <th>{{ item.product }}</th>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.product.price }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </table>
+    {% else %}
+    <div class="row container-fluid m-auto sectionRow">
+      <p class="EmptyBag">Your cart is empty!</p>
+    </div>
+        <a href="{% url 'merch' %}" class="btn rounded-0 mt-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+        </a>
+      {% endif %}
+    
+        <a href="{% url 'merch' %}" class="btn rounded-0 mt-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Keep Shopping</span>
+        </a>
+ 
 
-{{ bag_items }}
-
-{% endif %}
+        <a href="#" class="btn rounded-0 mt-5">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Secure Checkout</span>
+        </a>
+ 
 {% endblock %}
