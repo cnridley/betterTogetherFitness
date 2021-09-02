@@ -741,3 +741,11 @@ ul{ /*-- removes bullet point list --*/
     z-index: 999; 
 }
 
+.custom-toast{
+    overflow: visible;
+}
+
+.toast.capper {
+    height: 20px;
+}
+
