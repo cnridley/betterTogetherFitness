@@ -731,3 +731,13 @@ ul{ /*-- removes bullet point list --*/
     text-decoration: underline;
 }
 
+
+/*-- Message container --*/
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 10px;
+    z-index: 999; 
+}
+
